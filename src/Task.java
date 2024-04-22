@@ -19,11 +19,17 @@ public class Task {
         return id;
     }
 
+    public Task(String name, String description, Status status) {
+        this.name = name;
+        this.description = description;
+        this.status = status;
+
+    }
+
     public Task(String name, String description) {
         this.name = name;
         this.description = description;
         this.status = Status.NEW;
-
 
     }
 
@@ -64,6 +70,10 @@ public class Task {
 
     public String getDescription() {
         return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
 
